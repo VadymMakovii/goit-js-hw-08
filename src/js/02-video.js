@@ -19,6 +19,6 @@ function populateTimeLine() {
     const playedTime = localStorage.getItem(STORAGE_KEY);
     
     if(playedTime) {
-        player.setCurrentTime(playedTime);
+        player.setCurrentTime(playedTime ?? 0);
     };
 };
